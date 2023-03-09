@@ -1,0 +1,18 @@
+.sitewide-search__history[data-v-75a661b6] {
+  background-color: #fff;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+.sitewide-search__history-list[data-v-75a661b6] {
+  margin: 0;
+}
+.sitewide-search__history-list li[data-v-75a661b6] {
+  color: #555;
+}
+.sitewide-search__history-list li[data-v-75a661b6]:hover {
+  background-color: #e5e5e5;
+  color: #222;
+}
+.sitewide-search__history-list li:hover .pf-i[data-v-75a661b6] {
+  color: #222 !important;
+}

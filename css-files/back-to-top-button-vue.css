@@ -1,0 +1,16 @@
+.back-to-top-button__icon[data-v-4261bd3a] {
+  transition: transform 0.3s cubic-bezier(0.4, 0.22, 0.28, 1);
+}
+.back-to-top-button__text[data-v-4261bd3a] {
+  text-decoration: underline;
+}
+.back-to-top-button:focus-visible .back-to-top-button__text[data-v-4261bd3a],
+.back-to-top-button:hover .back-to-top-button__text[data-v-4261bd3a] {
+  text-decoration: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .back-to-top-button:focus-visible .back-to-top-button__icon[data-v-4261bd3a],
+  .back-to-top-button:hover .back-to-top-button__icon[data-v-4261bd3a] {
+    transform: translateY(-0.3em);
+  }
+}

@@ -1,0 +1,38 @@
+.widget-promo-shortcuts__wrapper {
+  grid-row-gap: 0;
+}
+@media (min-width: 540px) {
+  .widget-promo-shortcuts__wrapper {
+    grid-row-gap: 24px;
+  }
+  .widget-promo-shortcuts__card:hover img {
+    transform: scale(1.1);
+  }
+}
+.widget-promo-shortcuts__card img {
+  transition: 0.3s linear;
+  will-change: transform, opacity;
+}
+.widget-promo-shortcuts .widget-bottom-0 {
+  bottom: 0 !important;
+  z-index: 5;
+}
+.widget-promo-shortcuts__overlay {
+  background: linear-gradient(
+    1turn,
+    rgba(0, 0, 0, 0.5) 32.74%,
+    hsla(0, 0%, 100%, 0) 86.12%
+  );
+  bottom: 0;
+}
+.widget-promo-shortcuts .overflow-hidden {
+  overflow: hidden;
+}
+.widget-promo-shortcuts__title {
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .widget-promo-shortcuts__title {
+    font-size: 24px;
+  }
+}

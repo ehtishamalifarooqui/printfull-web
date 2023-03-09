@@ -1,0 +1,66 @@
+.holiday-popup .modal-header {
+  border-bottom: none;
+  position: relative;
+  z-index: 9;
+}
+.holiday-popup .modal-body {
+  padding-bottom: 0;
+}
+.holiday-popup .modal-body .row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.holiday-popup .modal-body .whitesmoke {
+  padding: 10px 80px;
+}
+.holiday-popup .modal-body .whitesmoke p {
+  padding: 15px 0;
+}
+.holiday-popup .modal-body .whitesmoke .button-container {
+  margin-bottom: 10px;
+}
+.holiday-popup .modal-body .header-image {
+  margin: -69px auto 0;
+  width: 100%;
+}
+.modal-popup--centered {
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.timed-popup {
+  position: relative;
+}
+.timed-popup__thumbnail {
+  vertical-align: top;
+  width: 100%;
+}
+.timed-popup__label,
+.timed-popup__thumbnail {
+  cursor: pointer;
+}
+.timed-popup__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media (max-width: 539.98px) {
+  .timed-popup__title-responsive {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+.timed-popup__text {
+  font-weight: 400;
+}
+.timed-popup__close {
+  cursor: pointer;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.order-popup__profit-calculator .accordion__header:hover {
+  color: #555;
+}

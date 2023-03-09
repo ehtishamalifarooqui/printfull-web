@@ -1,0 +1,108 @@
+.review__product-name {
+  color: #555;
+  font-weight: 700;
+  line-height: 22px;
+}
+.review__color-text {
+  color: #555;
+  font-size: 12px;
+}
+.review__main-form .review-stars__stars div {
+  font-size: 45px;
+}
+.review__main-form .swatches__item {
+  top: 2px;
+}
+.review__main-form--active {
+  background-color: #fff;
+}
+.review__main-form__heading {
+  border-bottom: 1px solid #e5e5e5;
+  margin-left: -10px;
+}
+.review__main-form__heading .close {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.review__main-form__heading > .review__main-form__heading-text {
+  padding: 11px 0 11px 16px;
+}
+.review__main-form__heading-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.review__overlay {
+  background-color: hsla(0, 0%, 100%, 0.6);
+  height: 85%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 19;
+}
+.review__variant-info img {
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+}
+.review__variant-info__text {
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+}
+.review__buttons {
+  box-shadow: inset 0 1px 0 0 #e5e5e5;
+}
+.review__buttons .col-6 {
+  max-width: 30%;
+  padding-left: 12px;
+  padding-right: 0;
+}
+.review__buttons--hidden {
+  opacity: 0;
+}
+.review__form .review-form-submit {
+  margin-top: -24px;
+}
+.review__form .review-form-submit span.pf-text-red {
+  display: none;
+}
+.review__form .review-form-submit textarea {
+  font-size: 16px;
+}
+.review__form .review-form-submit .review-upload {
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+.review__legal span {
+  color: #b1b1b1;
+  font-size: 14px;
+}
+.review__message {
+  font-size: 18px;
+  font-weight: 700;
+  left: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 20;
+}
+.review__message.success {
+  color: #0c8512;
+}
+.review__message.error {
+  color: #cf1814;
+}
+@media (max-width: 991.98px) {
+  .review__main-form .review-stars__stars div {
+    font-size: 24px;
+  }
+  .review__buttons .col-6 {
+    max-width: 49%;
+  }
+  .review .pf-badge {
+    display: inline-table;
+    margin-bottom: 5px;
+  }
+}

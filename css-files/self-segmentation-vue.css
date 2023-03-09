@@ -1,0 +1,87 @@
+.buttons-switcher[data-v-28c20001] {
+  min-height: 40px;
+}
+.buttons-switcher
+  input:focus-visible
+  ~ .buttons-switcher-inactive[data-v-28c20001] {
+  border: 1px solid #000;
+  border-right: 0;
+}
+.buttons-switcher
+  input:focus-visible
+  ~ .buttons-switcher-inactive-right[data-v-28c20001] {
+  border-left: 0;
+  border-right: 1px solid #000;
+}
+.buttons-switcher-active[data-v-28c20001] {
+  left: 0;
+  padding-right: 1px !important;
+  top: 0;
+  transition: left 0.3s ease-in-out;
+  width: 50%;
+}
+.buttons-switcher-active-second[data-v-28c20001] {
+  left: 50%;
+  padding-left: 1px !important;
+  padding-right: 2px !important;
+}
+.buttons-switcher-active-btn[data-v-28c20001] {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  min-height: 36px;
+}
+.buttons-switcher-active [data-v-28c20001] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buttons-switcher-inactive[data-v-28c20001] {
+  color: #555;
+  left: 0;
+  padding-right: 1px !important;
+  top: 0;
+  width: 50%;
+}
+.buttons-switcher-inactive-right[data-v-28c20001] {
+  left: 50%;
+  padding-left: 1px !important;
+  padding-right: 2px !important;
+}
+.buttons-switcher-inactive[data-state="active"][data-v-28c20001] {
+  color: #222;
+}
+.buttons-switcher-inactive:focus .buttons-switcher-btn[data-v-28c20001],
+.buttons-switcher-inactive:hover .buttons-switcher-btn[data-v-28c20001] {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+.buttons-switcher-inactive [data-v-28c20001] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buttons-switcher-btn[data-v-28c20001] {
+  line-height: 36px;
+  pointer-events: none;
+}
+.buttons-switcher-icon-size[data-v-28c20001] {
+  width: 78px;
+}
+.buttons-switcher-icon-size .buttons-switcher-btn[data-v-28c20001] {
+  line-height: 36px;
+}
+.buttons-switcher-large[data-v-28c20001] {
+  min-height: 56px;
+}
+.buttons-switcher-large .buttons-switcher-active-btn[data-v-28c20001],
+.buttons-switcher-large .buttons-switcher-inactive[data-v-28c20001] {
+  min-height: 52px;
+}
+.buttons-switcher-large .buttons-switcher-btn[data-v-28c20001] {
+  line-height: 52px;
+}
+@media (min-width: 540px) {
+  .self-segmentation-switcher[data-v-10bf4783] {
+    max-width: 340px;
+  }
+}

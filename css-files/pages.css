@@ -1,0 +1,88 @@
+.terms-of-service h2,
+.terms-of-service h3,
+.terms-of-service h4 {
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+.terms-of-service h2 {
+  font-size: 24px;
+}
+.terms-of-service h3 {
+  font-size: 16px;
+  line-height: 26px;
+}
+.terms-of-service h4 {
+  font-size: 23px;
+}
+.terms-of-service ol li {
+  list-style: upper-alpha;
+}
+.terms-of-service ol li:before {
+  content: none;
+}
+.terms-of-service ol li ol li {
+  list-style: lower-roman;
+}
+.terms-of-service__row {
+  cursor: pointer;
+}
+.terms-of-service__row :hover {
+  color: #555;
+}
+.terms-of-service__row span:first-of-type {
+  float: left;
+}
+.terms-of-service__row span:last-of-type {
+  display: block;
+  overflow: hidden;
+}
+.terms-of-service__arrow,
+.terms-of-service__arrow[data-open="open"] {
+  background: url(/static/images/layout/chevron-down.svg) no-repeat 95%;
+  display: inline-block;
+  height: 23px;
+  transition: transform 333ms;
+  width: 16px;
+}
+.terms-of-service__arrow[data-open="open"] {
+  -webkit-transform: rotate(-180deg);
+}
+.amazon-region-flag {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  width: 18px;
+}
+.amazon-region-flag img {
+  width: 16px;
+}
+.dashbord-amazon-regions {
+  font-size: 15px;
+  font-weight: 700;
+}
+.timeline--image {
+  height: 100%;
+  max-height: 200px;
+  max-width: 300px;
+  position: relative;
+  width: 100%;
+}
+.timeline-info {
+  min-height: 200px;
+}
+.cost--image {
+  max-height: 240px;
+  max-width: 360px;
+  position: relative;
+}
+.vertical-align {
+  display: block;
+}
+@media (min-width: 992px) {
+  .vertical-align {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

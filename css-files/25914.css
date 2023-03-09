@@ -1,0 +1,475 @@
+.modal-sticky[data-v-308cde06] {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991.98px) {
+  .modal-sticky[data-v-308cde06] {
+    min-height: calc(100% - 60px);
+  }
+}
+.modal-sticky .modal-body[data-v-308cde06] {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+html[lang="ja"] .pf-progress-indicator[data-v-3523d98f] {
+  --number-font-size-desktop: 16px;
+}
+html[lang="ja"] .pf-progress-indicator__number[data-v-3523d98f]:after {
+  transform: translateY(-1px);
+}
+@media (min-width: 540px) {
+  html[lang="ja"] .pf-progress-indicator__number[data-v-3523d98f]:after {
+    transform: translateY(0);
+  }
+}
+.pf-progress-indicator[data-v-3523d98f] {
+  --number-circle-size-mobile: 24px;
+  --number-circle-size-desktop: 40px;
+  --number-circle-size-hover: 4px;
+  --number-font-size-desktop: 15px;
+  --number-line-height-desktop: 1;
+  --text-font-size-desktop: 18px;
+  --text-line-height-desktop: 26px;
+  --done-icon-size-desktop: 24px;
+}
+.pf-progress-indicator[data-v-3523d98f]:after,
+.pf-progress-indicator[data-v-3523d98f]:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.pf-progress-indicator__steps[data-v-3523d98f] {
+  counter-reset: steps;
+}
+.pf-progress-indicator[data-is-horizontal][data-v-3523d98f]:after,
+.pf-progress-indicator[data-is-horizontal][data-v-3523d98f]:before {
+  height: 100%;
+  top: 0;
+  width: 32px;
+}
+.pf-progress-indicator[data-is-horizontal][data-v-3523d98f]:before {
+  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 0, #fff 50%);
+  display: var(--start-overlay-display, none);
+  left: -8px;
+}
+@media (min-width: 992px) {
+  .pf-progress-indicator[data-is-horizontal][data-v-3523d98f]:before {
+    left: 0;
+  }
+}
+.pf-progress-indicator[data-is-horizontal][data-v-3523d98f]:after {
+  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff 50%);
+  display: var(--end-overlay-display, none);
+  right: -8px;
+}
+@media (min-width: 992px) {
+  .pf-progress-indicator[data-is-horizontal][data-v-3523d98f]:after {
+    right: 0;
+  }
+}
+.pf-progress-indicator[data-is-horizontal]
+  .pf-progress-indicator__steps[data-v-3523d98f] {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding: 0 50%;
+  scroll-snap-type: x mandatory;
+}
+.pf-progress-indicator[data-is-vertical][data-v-3523d98f]:after,
+.pf-progress-indicator[data-is-vertical][data-v-3523d98f]:before {
+  height: 32px;
+  width: 100%;
+}
+.pf-progress-indicator[data-is-vertical][data-v-3523d98f]:before {
+  background-image: linear-gradient(0deg, hsla(0, 0%, 100%, 0) 0, #fff 50%);
+  display: var(--start-overlay-display, none);
+  top: 0;
+}
+.pf-progress-indicator[data-is-vertical][data-v-3523d98f]:after {
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #fff 50%);
+  bottom: 0;
+  display: var(--end-overlay-display, none);
+}
+.pf-progress-indicator[data-is-vertical]
+  .pf-progress-indicator__steps[data-v-3523d98f] {
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-padding: 50% 0;
+  scroll-snap-type: y mandatory;
+}
+.pf-progress-indicator__step[data-v-3523d98f] {
+  counter-increment: steps;
+  position: relative;
+}
+.pf-progress-indicator__step[data-v-3523d98f]:not(:last-of-type):after {
+  background-color: #e5e5e5;
+  content: "";
+  pointer-events: none;
+}
+.pf-progress-indicator__step a[data-v-3523d98f] {
+  cursor: default;
+  outline: 0;
+  pointer-events: none;
+}
+.pf-progress-indicator__step a .pf-progress-indicator__number[data-v-3523d98f] {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+  color: #555;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  height: var(--number-circle-size-mobile);
+  justify-content: center;
+  line-height: 18px;
+  text-align: center;
+  transition: opacity 0.3s linear;
+  width: var(--number-circle-size-mobile);
+}
+.pf-progress-indicator__step
+  a
+  .pf-progress-indicator__number[data-v-3523d98f]:after {
+  content: counter(steps);
+}
+@media (min-width: 540px) {
+  .pf-progress-indicator__step
+    a
+    .pf-progress-indicator__number[data-v-3523d98f] {
+    font-size: var(--number-font-size-desktop);
+    height: var(--number-circle-size-desktop);
+    line-height: var(--number-line-height-desktop);
+    width: var(--number-circle-size-desktop);
+  }
+}
+.pf-progress-indicator__step[data-done][data-v-3523d98f]:after {
+  background-color: #373737;
+}
+.pf-progress-indicator__step[data-done] a[data-v-3523d98f] {
+  cursor: pointer;
+  pointer-events: auto;
+}
+.pf-progress-indicator__step[data-done]
+  a
+  .pf-progress-indicator__number[data-v-3523d98f] {
+  background-color: #373737;
+  box-shadow: inset 0 0 0 2px #373737;
+  color: #fff;
+  position: relative;
+}
+.pf-progress-indicator__step[data-done]
+  a
+  .pf-progress-indicator__number[data-v-3523d98f]:before {
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+}
+.pf-progress-indicator__step[data-done]
+  a
+  .pf-progress-indicator__check[data-v-3523d98f] {
+  align-items: center;
+  background-color: #373737;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #373737;
+  color: #fff;
+  display: inline-flex;
+  font-family: Material Design Icons;
+  font-size: 18px;
+  font-weight: 400;
+  height: var(--number-circle-size-mobile);
+  justify-content: center;
+  position: absolute;
+  transition: opacity 0.3s linear;
+  width: var(--number-circle-size-mobile);
+}
+.pf-progress-indicator__step[data-done]
+  a
+  .pf-progress-indicator__check[data-v-3523d98f]:after {
+  content: "\F012C";
+}
+@media (min-width: 540px) {
+  .pf-progress-indicator__step[data-done]
+    a
+    .pf-progress-indicator__check[data-v-3523d98f] {
+    font-size: var(--done-icon-size-desktop);
+    height: var(--number-circle-size-desktop);
+    width: var(--number-circle-size-desktop);
+  }
+}
+.pf-progress-indicator__step[data-done]
+  a:focus-visible
+  .pf-progress-indicator__number[data-v-3523d98f],
+.pf-progress-indicator__step[data-done]
+  a:hover
+  .pf-progress-indicator__number[data-v-3523d98f] {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 1;
+}
+.pf-progress-indicator__step[data-done]
+  a:focus-visible
+  .pf-progress-indicator__number[data-v-3523d98f]:before,
+.pf-progress-indicator__step[data-done]
+  a:hover
+  .pf-progress-indicator__number[data-v-3523d98f]:before {
+  box-shadow: 0 0 0 var(--number-circle-size-hover) #e5e5e5;
+  opacity: 1;
+}
+@media (min-width: 540px) {
+  .pf-progress-indicator__step[data-done]
+    a:focus-visible
+    .pf-progress-indicator__number[data-v-3523d98f],
+  .pf-progress-indicator__step[data-done]
+    a:hover
+    .pf-progress-indicator__number[data-v-3523d98f] {
+    font-size: var(--number-font-size-desktop);
+    line-height: var(--number-line-height-desktop);
+  }
+}
+.pf-progress-indicator__step[data-done]
+  a:focus-visible
+  .pf-progress-indicator__check[data-v-3523d98f],
+.pf-progress-indicator__step[data-done]
+  a:hover
+  .pf-progress-indicator__check[data-v-3523d98f] {
+  opacity: 0;
+}
+.pf-progress-indicator__step[data-done]
+  a:focus-visible
+  .pf-progress-indicator__text[data-v-3523d98f],
+.pf-progress-indicator__step[data-done]
+  a:hover
+  .pf-progress-indicator__text[data-v-3523d98f] {
+  color: #222 !important;
+  text-decoration: underline;
+}
+.pf-progress-indicator__step[data-active][data-v-3523d98f] {
+  scroll-snap-align: center;
+}
+.pf-progress-indicator__step[data-active]
+  a
+  .pf-progress-indicator__number[data-v-3523d98f] {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #222;
+  color: #222;
+}
+.pf-progress-indicator__step[data-disabled][data-v-3523d98f]:after {
+  background-color: #e5e5e5;
+}
+.pf-progress-indicator__step[data-disabled] a[data-v-3523d98f] {
+  cursor: default;
+  pointer-events: none;
+}
+.pf-progress-indicator__step[data-disabled][data-done]
+  a
+  .pf-progress-indicator__check[data-v-3523d98f] {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  color: #555;
+}
+.pf-progress-indicator__step[data-disabled][data-done]
+  a
+  .pf-progress-indicator__number[data-v-3523d98f] {
+  opacity: 0;
+}
+.pf-progress-indicator__step[data-disabled][data-done]
+  a:focus-visible
+  .pf-progress-indicator__check[data-v-3523d98f],
+.pf-progress-indicator__step[data-disabled][data-done]
+  a:hover
+  .pf-progress-indicator__check[data-v-3523d98f] {
+  opacity: 1;
+}
+.pf-progress-indicator__text[data-v-3523d98f] {
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (min-width: 540px) {
+  .pf-progress-indicator__text[data-v-3523d98f] {
+    font-size: var(--text-font-size-desktop);
+    line-height: var(--text-line-height-desktop);
+  }
+}
+.disabled[data-v-22a11c28] {
+  background-color: #eee !important;
+  cursor: not-allowed;
+  opacity: 1;
+}
+@media (min-width: 540px) {
+  html[lang="ja"] .pf-progress-indicator__number[data-v-7c1ecc36]:after {
+    transform: translateY(-1px) !important;
+  }
+}
+.pf-progress-indicator__step[data-v-7c1ecc36] {
+  --number-circle-size-desktop: 24px;
+  --number-font-size-desktop: 12px;
+  --number-line-height-desktop: 18px;
+  --text-font-size-desktop: 14px;
+  --text-line-height-desktop: 22px;
+  --done-icon-size-desktop: 18px;
+  white-space: nowrap;
+}
+.pf-progress-indicator__step[data-v-7c1ecc36]:not(:last-of-type):after {
+  height: 1px;
+  width: 24px;
+}
+@media (min-width: 540px) {
+  .pf-progress-indicator__step[data-v-7c1ecc36]:not(:last-of-type):after {
+    width: 48px;
+  }
+}
+.pf-sys-background[data-v-66ba9922] {
+  background-color: var(--pf-sys-background, #fff);
+}
+.pf-sys-neutral-900-on-background[data-v-66ba9922] {
+  color: var(--pf-sys-neutral-900-on-background, #222);
+}
+.pf-sys-neutral-700-on-background[data-v-66ba9922] {
+  color: var(--pf-sys-neutral-700-on-background, #555);
+}
+.pf-sys-border-on-background[data-v-66ba9922] {
+  border-color: var(
+    --pf-sys-border-on-background,
+    var(--pf-sys-neutral-300-on-background, #e5e5e5)
+  ) !important;
+}
+.pf-sys-icon-on-background[data-v-66ba9922] {
+  color: var(
+    --pf-sys-icon-on-background,
+    var(--pf-sys-neutral-400-on-background, #b1b1b1)
+  );
+}
+.pf-sys-icon-hover-neutral-900-on-background:hover .pf-i[data-v-66ba9922] {
+  color: var(
+    --pf-sys-icon-hover-neutral-900-on-background,
+    var(--pf-sys-neutral-900-on-background, #222)
+  );
+}
+.pf-sys-icon-info-on-background[data-v-66ba9922] {
+  color: var(
+    --pf-sys-icon-info-on-background,
+    var(
+      --pf-sys-icon-on-background,
+      var(--pf-sys-neutral-400-on-background, #b1b1b1)
+    )
+  );
+}
+.pf-sys-neutral-surface-50[data-v-66ba9922] {
+  background-color: var(--pf-sys-neutral-surface-50, #f8f8f8);
+}
+.pf-sys-primary-700-on-background[data-v-66ba9922] {
+  color: var(--pf-sys-primary-700-on-background, #e40f0a);
+}
+.pf-sys-error-on-background[data-v-66ba9922] {
+  color: var(--pf-sys-error-on-background, #cf1814);
+}
+.pf-sys-success-on-background[data-v-66ba9922] {
+  color: var(--pf-sys-success-on-background, #0c8512);
+}
+.pf-sys-warning-on-background[data-v-66ba9922] {
+  color: var(--pf-sys-warning-on-background, #f7b500);
+}
+.dropdown-input-image[data-v-66ba9922] {
+  height: 24px;
+  object-fit: contain;
+  width: 24px;
+}
+.dropdown-input__menu-up[data-v-66ba9922] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top: 1px solid
+    var(--pf-comp-dropdown-input-menu-up-border-top-color, rgba(0, 0, 0, 0.15)) !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: 100%;
+  top: unset;
+}
+.disabled[data-v-66ba9922] {
+  background-color: #eee;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.dropdown-input input[data-v-66ba9922]::placeholder {
+  color: var(
+    --pf-comp-dropdown-input-placeholder-on-surface,
+    var(
+      --pf-comp-input-placeholder-on-surface,
+      var(--pf-sys-neutral-700-on-background, #555)
+    )
+  );
+}
+.dropdown-input__menu-item-hide-overflow[data-v-66ba9922] {
+  display: block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.calendar__container .dropdown-toggle.SafariBrowser[data-v-66ba9922]:focus {
+  position: absolute;
+}
+#dropdown-menu__ctaButton.SafariBrowser[data-v-66ba9922]:focus,
+.dropdown-toggle.SafariBrowser[data-v-66ba9922]:focus {
+  outline-offset: -3px;
+  outline-style: auto;
+}
+#dropdown-menu__ctaButton[data-v-66ba9922]:focus-visible,
+.dropdown-toggle[data-v-66ba9922]:focus-visible {
+  outline: auto Highlight;
+  outline: auto -webkit-focus-ring-color;
+  outline-offset: -1px;
+}
+.tt-input-smaller-center[data-v-66ba9922] {
+  background-position-y: center !important;
+  background-size: 15px 15px !important;
+}
+.dropdown-input-wrapper > button > div > span {
+  color: #222 !important;
+}
+.inherit-text-color {
+  color: inherit !important;
+}
+.contact-sales-form-new #contact-sales-form-basic-info > a,
+.contact-sales-form-new .pf-progress-indicator > ol {
+  padding-left: 0 !important;
+}
+.contact-sales-form-new .pf-progress-indicator__check,
+.contact-sales-form-new .pf-progress-indicator__step:after {
+  background-color: #222 !important;
+}
+.contact-sales-form-new .pf-progress-indicator__text {
+  color: #222 !important;
+}
+.contact-sales-form-new .pf-progress-indicator__text,
+.contact-sales-form-new .policy-checkbox > label {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.contact-sales__dropdown-error .dropdown-input-wrapper {
+  border-color: #ed4642;
+}
+.contact-sales-form-new .pf-btn-primary-enterprise {
+  box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5) !important;
+}
+.contact-sales-form-new
+  .pf-btn-primary-enterprise.active:not(.disabled):not([disabled]),
+.contact-sales-form-new
+  .pf-btn-primary-enterprise:active:not(.disabled):not([disabled]),
+.contact-sales-form-new .pf-btn-primary-enterprise:focus,
+.contact-sales-form-new
+  .pf-btn-primary-enterprise:hover:not(.disabled):not([disabled]) {
+  border-color: #000 !important;
+}
+.contact-sales-form-new
+  .pf-btn-primary-enterprise:focus:not(.disabled):not([disabled]) {
+  box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5) !important;
+}
+.contact-sales-form-new .policy-checkbox label {
+  margin-bottom: 4px;
+}
